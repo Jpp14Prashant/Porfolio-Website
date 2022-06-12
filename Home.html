@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tech on Web</title>
+	<!-- insertinf meta tags-->
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta name="description" content="Home page of website" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="Prashant Rai" />
+    <meta http-equiv="refresh" content="5" />
+    <!-- linking external css file--> 
+	<link rel="stylesheet" type="text/css" href="./css/externalhome.css">
+	<!-- inserting font from google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">  
+    <!-- using internal css-->
+	<style type="text/css">
+		/* style for body */
+		body
+		{
+			background-color: #ffffff;
+		}
+        /* this hover shows the links we are selecting in navigation bar */
+		li a:hover
+		{
+			color: #00ccff;
+		}
+		/* this active shows the active link in navigation bar*/
+		li a:active
+		{
+			color: #00ff00;
+		}
+		footer
+        {
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            font-family: 'Teko', sans-serif;
+            background-color: #000000;
+        }
+	</style>
+</head>
+<body>
+	<!-- creating navigation bar by listing method-->
+	<nav>
+		<ul>
+			<li style="float: left;"><a href="Home.html"><img src="./images/logo3.png" width="30" height="25">TECH ON WEB</a></li><!-- using inline css for styling the logo in navigation bar-->
+			<li><a href="research.html">RESEARCH</a></li>
+			<li><a href="blog.html">BLOG</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="Home.html">HOME</a></li>
+		</ul>
+        </nav>
+        <div class="headarea">
+        	<h2> 
+        		WELCOME TO <br>
+        		<!-- span is used to style specific words in the heading-->
+        		<span style="color: #66ffff">TECH</span> ON <span style ="color: #66ffff">WEB </span> 
+            </h2>  <!--inserting login and signup button on the home page-->
+            <button type="button"><a href="login.html"> LOG IN</a></button>  
+            <br>
+            <button type="button"><a href="Signup.html"> SIGN UP</a></button>
+        </div>
+        <footer>
+            Designed by Prashant Rai<br>            
+            &copy;Copyright TechonWeb 2021 
+        </footer>
+       
+</body>
+</html>

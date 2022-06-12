@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <!-- insertinf meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Signup page of website" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="Prashant Rai" />
+    <!-- linking external css files-->
+    <link rel="stylesheet" type="text/css" href="./css/externalhome.css"> 
+    <link rel="stylesheet" type="text/css" href="./css/externalsignup.css">
+    <!-- inserting font from google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> 
+    <!-- using internal css-->
+    <style type="text/css">
+        /* styling heading*/
+        h1
+        {
+            font-family: 'Teko', sans-serif;
+        }
+        /* style for body */
+        body
+        {
+            color: #ffffff;
+            font-family: Arial,  Helvetica , sans-serif;
+        }
+        /* this hover shows the links we are selecting in navigation bar */
+        li a:hover
+        {
+            color: #00ccff;
+        }
+        /* this active shows the active link in navigation bar*/
+        li a:active
+        {
+            color: #00ff00;
+        }
+    </style>
+    <!-- using internal javascript for form validation -->
+    <script type="text/javascript">
+            function valids() /*when the valids function is called below part is processed*/
+        {
+            var firstname = document.forms["validforms"]["FirstName"].value;
+            var lastname = document.forms["validforms"]["LastName"].value;
+            var email = document.forms["validforms"]["email"].value;
+            var password = document.forms["validforms"]["Password"].value;
+            if (firstname == "" || lastname == "" || email == "" || password == "")  
+            /*If any of fistname, lastname,email,password or all are empty then below message will be alerted as pop-up to the user*/
+            {
+                alert("User input is incomplete!");
+            } 
+            /*If there is no empty entry then below message will be alerted as pop-up to the user and the user will be moved to home page*/
+            else   
+            {
+                alert("Sign Up successful!");
+                window.open("Home.html");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- creating navigation bar by listing method-->
+    <nav>
+        <ul>
+            <li style="float: left;"><a href="Home.html"><img src="./images/logo3.png" width="30" height="25">TECH ON WEB</a></li><!-- using inline css for styling the logo in navigation bar-->
+            <li><a href="research.html">RESEARCH</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="Home.html">HOME</a></li>
+        </ul>
+    </nav>
+    <div class="bgarea">
+        <div id="bg"> <img src="./images/logoo.png"> </div>  <!--inserting logo image beside the form-->
+<!--Creating form for signing up new user account-->
+        <form name = "validforms" onsubmit="valids()"> <!-- when submit button is clicked valids() function is called-->
+            <h1> <span style="color: #66ffff">Sign </span> <span style="color: #66ff66">Up</span></h1>
+            <br>
+            FirstName:
+            <input type = "text" name = "FirstName" class="signinp" size="25px" placeholder="Enter your first name">
+            <br>
+            LastName:
+            <input type = "text" name = "LastName" class="signinp" size="25px" placeholder="Enter your Last name">
+            <br>
+            Email:
+            <input type = "email" name = "email" size="25px" class="signinp" placeholder="Enter your email">
+            <br>
+            Password:
+            <input type = "Password"  name = "Password" size="25px"  class="signinp" placeholder="Enter your password">
+            <br>
+            Gender:
+            <input type="radio" name="gender"  value="male">Male
+            <input type="radio" name="gender"  value="female">Female
+    	    <input type="radio" name="gender"  value="other">Other
+    	    <br><br>
+    	    Date of Birth:
+            <select name="Year">
+                <option value="Year">Year</option>
+                <option value="2005">2005</option>
+                <option value="2004">2004</option>
+                <option value="2003">2003</option>
+                <option value="2002">2002</option>
+                <option value="2001">2001</option>
+                <option value="2000">2000</option>
+                <option value="1999">1999</option>
+                <option value="1998">1998</option>
+            </select>
+            <select name="Month">
+                <option value="Month">Month</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <select name="Day">
+                <option value="Day">Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+            </select>
+            <br>
+            <input type="submit" value="Sign Up" name="Signup" class = "button">
+        </form>
+
+    </div>
+</body>
+</html>

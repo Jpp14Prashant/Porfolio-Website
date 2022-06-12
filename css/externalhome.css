@@ -1,0 +1,78 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/* styling navigation bar*/
+nav
+{
+	width: 100%;
+	font-family: 'Teko', sans-serif;
+	position: relative;
+}
+nav ul
+{
+	
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #000000;
+
+}
+/* Styling all the list(navigation bar)*/
+nav ul li
+{
+	float: right;
+	line-height: 80px;
+
+}
+nav ul li a
+{
+	font-size: 30px;
+	color: #ffffff;
+	margin: 0 25px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 4px;
+}
+
+/*Inserting and styling background wallpaper*/
+.headarea
+{
+	width: 100%;
+	height: 647px;
+	position: relative;
+	background-image: url(../images/wallpaper2.png);
+	background-size: cover;
+	background-position: center ;
+}
+
+/*Styling the heading of main home page*/
+.headarea h2
+{
+	padding-top: 30px;
+	font-size: 165px;
+    font-family: 'Teko', sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+/*Styling the login ang signup button on home page*/
+button
+{
+	width: 200px;
+	color: #000000;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 12px 0;
+	background:#ffffff;
+	border: none;
+	border-radius: 20px;
+	margin-top: 20px;
+} 
+/*Using hover in login and signup button on the home page*/
+button:hover
+{
+	background-color: #66CCFF;
+
+}

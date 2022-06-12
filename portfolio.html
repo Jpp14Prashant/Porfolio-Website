@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+    <!-- insertinf meta tags-->
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+    <meta name="description" content="Portfolio page of website" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="Prashant Rai" />
+    <!-- linking external css files-->
+	<link rel="stylesheet" type="text/css" href="./css/externalhome.css">
+	<link rel="stylesheet" type="text/css" href="./css/externalportfolio.css">
+    <!-- inserting font from google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet"> 
+	<style type="text/css">
+        /* Styling heading*/
+		h2
+		{
+			text-align: center;
+			font-family: 'Teko', sans-serif;
+			font-size: 70px;
+		}
+		/* style for body */
+		body
+		{
+			overflow-x:hidden;
+			overflow-y: scroll;
+			background-color: #ffffff;
+			font-family: 'Teko', sans-serif;
+
+		}
+        /* hover shows the links we are selecting */
+		li a:hover
+		{
+			color: #00ccff;
+		}
+		/* active shows the active link*/
+		li a:active
+		{
+			color: #00ff00;
+		}
+        /*styling footer of the page*/
+        footer
+        {
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            font-family: 'Teko', sans-serif;
+            background-color: #000000;
+        }
+	</style>
+</head>
+<body>
+    <!-- creating navigation bar by listing method-->
+	<nav>
+		<ul>
+			<li style="float: left;"><a href="Home.html"><img src="./images/logo3.png" width="30" height="25">TECH ON WEB</a></li>
+			<li><a href="research.html">RESEARCH</a></li>
+			<li><a href="blog.html">BLOG</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="Home.html">HOME</a></li>
+		</ul>
+    </nav>
+    <div class="intro">
+    	<img src="./images/profile.jpeg" style="width:200px;"> <!--inserting my avatar image-->
+    	rumdali.psn@gmail.com<br>
+    	PRASHANT RAI
+    	<p>I am a student in IIC doing my bachelor in Bsc.Hons Computing(BIT) and planning to become a fine programmer in future. Even before joining college, in case of computer softwares and programming languages, i am a self-taught student with lots of research and self-learning. And what drives me to learn about these things about computers is the way of how they works. Like, it is really fascinating to watch how a software runs and does our job, games that we play and all the online stuffs but we don't realize how codes are implemented in them to be used like that, and it really excites me that with some lines of codes we can make a huge impact in others life and maybe that is also the reason i feel attached with the computers and its programming languages. I have learn basic python and some graphics designing like photoshop with the help of my self-researching and learning. Now, after joining college I have also managed to learn the basic knowledge of java, html, css, javascript and some database management.</p>
+    </div>
+    <!--Creating a qualification section using flex-->
+    <h2> Qualification</h2>
+    <div class="qualific">
+    	<div>
+    		SURYODAYA ENGLISH SCHOOL
+    		<img src="./images/ses.jpg" height="200px">
+    		<p> I did my SEE from Suryodaya English School which is located in Damak, Jhapa. I passed out with 3.5 GPA from there.  </p>
+    	</div>
+    	<div>
+    		LITTLE ANGELS COLLEGE
+    		<img src="./images/LA.png" height="200px">
+    		<p>For 2 years, i went to capital city Kathmandu and did my +2 there taking physics as my major subject. I passed out with 3.02 GPA in SLC from there.</p>
+    	</div>
+    	<div>
+    		ITAHARI INTERNATIONAL COLLEGE
+    		<img src="./images/iic.png" height="200px">
+    		<p>Now, i am currently studying in ItahariInternation college for my bachelors degreetaking Bsc. Hons Computing(BIT) as major. </p>
+    	</div>	
+    </div>
+    <!--Creating a skills section using flex-->
+    <h2>Skills</h2>
+    <div class="skill">
+    	<div>
+    		Hard Skills
+    		<ul type="none" class="list1">
+    			<li> Computer hardware and software knowledge </li>
+    			<li>Photoshop</li>
+    			<li>HTML</li>
+    			<li>CSS</li>
+    			<li>Java</li>
+    			<li>Python</li>
+    			<li>Database maagement</li>
+    		</ul>
+    	</div>
+    	<div>
+    		Soft Skills
+    		<ul type="none" class="list2">
+    			<li>Fast learner</li>
+    			<li>Problem solving</li>
+    			<li>Critical thinker</li>
+    			<li>Time Management</li>
+    			<li>Teamwork</li>
+    			<li>Creativity</li>
+    			<li>Responsibility</li>
+    		</ul>
+    	</div>
+    </div>
+    <footer>
+        Designed by Prashant Rai <br>
+        &copy;Copyright TechonWeb 2021 
+    </footer>
+</body>
+</html>

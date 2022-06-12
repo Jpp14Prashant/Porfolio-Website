@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<!-- insertinf meta tags-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="blog page of website" />
+    <meta name="keywords" content="HTML,CSS,Javascript" />
+    <meta name="author" content="Prashant Rai" />
+    <meta http-equiv="refresh" content="5" />
+    <!-- linking external css files-->
+	<link rel="stylesheet" type="text/css" href="./css/externalhome.css">
+	<link rel="stylesheet" type="text/css" href="./css/externalblog.css">
+	<!-- inserting font from google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+     <!-- using internal css--> 
+	<style type="text/css">
+		/*Styling heading 1*/
+		h1
+		{
+			text-align: center;
+			font-family: 'Teko', sans-serif;
+			font-size: 80px;
+			margin: 0;
+		}
+		/* style for body */
+		body
+		{
+			font-family: 'Teko', sans-serif;
+			text-align: center;
+			color: #000000;
+			overflow-x: hidden;
+			overflow-y: scroll;
+		}
+        /* hover shows the links we are selecting */
+		li a:hover
+		{
+			color: #00ccff;
+		}
+		/* active shows the active link*/
+		li a:active
+		{
+			color: #00ff00;
+		}
+		/*Styling footer of this webpage*/
+		footer
+        {
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            font-size: 20px;
+            color: #fff;
+            font-family: 'Teko', sans-serif;
+            background-color: #000000;
+        }
+		
+	</style>
+	
+</head>
+<body>
+	<!-- creating navigation bar by listing method-->
+	<nav>
+		<ul>
+			<li style="float: left;"><a href="Home.html"><img src="./images/logo3.png" width="30" height="25">TECH ON WEB</a></li>
+			<li><a href="research.html">RESEARCH</a></li>
+			<li><a href="blog.html">BLOG</a></li>
+			<li><a href="portfolio.html">PORTFOLIO</a></li>
+			<li><a href="Home.html">HOME</a></li>
+		</ul>
+    </nav>
+    <div>
+    	<h1><span style="color: #000066">TECHNOLOGY</span> AFFECTING OUR DAILY<span style="color: #33cc33"> LIVES</span></h1>
+    </div> 
+    <img src="./images/tech1.png" id="ig1" class="image hide">
+    <img src="./images/tech2.jpg" id="ig2" class="image hide">
+    <button class="button" onclick="change()">CHANGE NEXT </button>
+    <!-- inserting script for image toogle-->
+    <script type="text/javascript">
+    	function change() /* when the change() function is called below task will be processed*/
+    	{
+    		var image1 = document.getElementById("ig1");
+			var image2 = document.getElementById("ig2");
+			if (image1.style.display =="none") /*if image 1 is not displayed then it will be displayed and image2 will not be displayed*/
+			{
+			    image1.style.display="block";
+				image2.style.display="none";
+		    }
+		    else /*else image2 will be displayed*/
+			{
+				image2.style.display="block";
+				image1.style.display="none";
+			}
+		}
+		/*First image to be shown in the page is called here which is image having id ig1 i.e. image 1*/
+		var firstimg = document.getElementById("ig1");
+		firstimg.style.display="block";
+	</script>
+	<div>
+		<p>We’re living in a technology-driven world. And internet technology probably dominates many aspects of my life. I am so used to it that I don’t even think about all the areas it touches. From helping me to communicate with my friends and family to be used in the kitchen as i look up recipes and ingredients to doing repair on my devices, i look up a tutorial on YouTube and to accessing my entertainment online, its all there. Whenever i have any question, from the most mundane to the most complicated, i ask the internet.<br>
+		As for my day to day life, technology has also become a very important part of me. I am old enough to remember sitting at marred wooden desks in a classroom with only three learning tools: textbooks, a teacher, and a blackboard. If technology has done nothing else for education (and of course it has), it has provided learning experiences for students who cannot learn through traditional methods. But technology has brought other magnificent changes to the way we teach and learn and continues to provide innovations that engage learners in wonderful ways. Likeswise, some of the ways in which technology has affected my life are listed below.<br><br></p>
+        <!--inserting an ordered lsit in the blog-->
+        <ol>
+            <li>Technology offer me with great accessibility. In the past, students and teachers alike needed to be physically present in the same location for learning to take place. Thanks to the way internet technology allows for instant and convenient communication over great distances at the click of a button, this is no longer the case. And i can also access all the courelated information online that gives me access to more knowledge.</li>
+            <li>The idea of flexibility due to the internet goes hand in hand with improved accessibility. Online classes have saved me and my time from losing a complete year in current situation of COVID-19 pandamic by having to attend school online at specified times. But everybody doesnot have good internet or good device so teachers make the course materials available online, and even i have any problem during classes then the freedom to revise the past classes and cover up the absent classes whenever we want is there. As long as i complete work by the assigned deadline, it’s up to me to plan how to use my time.</li>
+            <li>I am a normal student but for students with disabilities and handicaps that may prevent them from attending brick and mortar campuses can enroll in e-learning courses and gain high school and/or college credit. Which will help them set a brigth future for themselves.</li>
+            <li>I can even use my smartphone to capture photos of information that has been put on whiteboards during class which provides more efficiency than hand note-taking, especially when there are also apps to organize and categorize notes from any class lectures.</li>
+            <li>Not only in studies, technology are also useful for lot of other things from when i turn on the fan during summer season to clicking photos through camera and keeping the beautiful moment of my life as memories, technology has helped me in many ways.  </li>
+            <br>
+        </ol>
+            <p>Day by day more technology are invented and i can use more devices which will upgrade me more for our future. Most of the college started using modern technology in Nepal also, Its a slow process but it will surely give a fruitful output. And with technology all around us we can be prepared for what challenge is waiting for us outside our teritory. Technology also helps me gain a far better understanding of things from inside or even outside of the module than they might from a book. which is a type of experiences that are critical for kids’ future success. So, technology has become a special part of me and my future. </p>
+		</div>
+		<footer>
+            Designed by Prashant Rai<br>            
+            &copy;Copyright TechonWeb 2021 
+        </footer>    
+</body>
+</html>

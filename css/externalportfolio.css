@@ -1,0 +1,80 @@
+/* styling profile*/
+.intro img
+{
+	margin: 0 600px;
+	padding-top: 15px;
+	border-radius: 50%;
+}
+/* styling email and name text*/
+.intro
+{
+	text-align: center;
+	font-size: 30px;
+	background-color: #ffff99;
+}
+/* Styling introduction paragraph */
+.intro p
+{
+	font-size: 20px;
+	text-align: justify;
+	margin: 15px 300px;
+	font-weight: normal;
+
+}
+/* Styling the qualification part to flex display */
+.qualific
+{
+	display: flex;
+	
+}
+/* styling the divided part of qualific class*/
+.qualific div
+{
+	font-weight: bold;
+	width: 500px;
+	margin: 40px;
+	text-align: center;
+	background-color: #f1f1f1;
+	font-size: 30px;
+	box-shadow: 8px 8px #ffff99;
+}
+/* styling every paragraph in qualidic class*/
+.qualific p
+{
+	font-weight: normal;
+	font-size: 25px;
+	padding:0 50px;
+	text-align: justify;
+}
+/* Styling the skill class part to flex display*/
+.skill
+{
+	display: flex;
+	padding-bottom: 40px;
+}
+/* styling every divided part in skill class */
+.skill div
+{
+	font-weight: bold;
+	width: 500px;
+	padding: 20px;
+	margin: 0px 150px;
+	text-align: center;
+	background-color: #f1f1f1;
+	font-size: 30px;
+	box-shadow: 8px 8px #ffff99;
+}
+/*Styling the list of hard skill section*/
+.list1 li
+{
+	font-weight: normal;
+	font-size: 25px;
+	padding:0 50px;
+}
+/*Styling the list of soft skill section*/
+.list2 li
+{
+	font-weight: normal;
+	font-size: 25px;
+	padding:0 50px;
+}

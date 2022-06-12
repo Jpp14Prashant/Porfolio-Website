@@ -1,0 +1,79 @@
+/* Styling table heading*/
+th
+{
+	font-size: 80px;
+}
+/*Styling heading of td*/
+td h2
+{
+	font-size: 60px;
+}
+/* Styling paragraph of td*/
+td p
+{
+	font-size: 20px;
+	text-align: justify;
+	margin: 25px 310px;
+	font-weight: normal;
+}
+/*Styling the colored words with link in every paragraph */
+td p a
+{
+	text-decoration: none; 
+}
+
+/*Styling all the image in the research page*/
+.inputimg
+{
+	width: 900px;
+	height: 500px;
+}
+
+/*Styling background color of image 1  */
+.img1
+{
+	background-color: #1a1a33;
+}
+
+/* Styling text color of paragraph in image 1 */
+.img1 p
+{
+	color: #fff;
+}
+
+
+/*Styling background color of image 2*/
+.img2
+{
+	background-color: #ffff66;
+}
+
+
+/*Styling background color of  image 3*/
+.img3
+{
+	background-color: #fff;
+}
+/*Styling background color of image 4*/
+.img4
+{
+	background-color: #828282;
+}
+
+/* Styling text color of paragraph in image 4 */
+.img4 p
+{
+	color: #fff;
+}
+
+/*Styling background color of image 5*/
+.img5
+{
+	background-color: #618f61;
+}
+/*Styling text color of paragraph in image 5*/
+.img5 p 
+{
+	color: #fff;
+	padding-bottom: 50px;
+}

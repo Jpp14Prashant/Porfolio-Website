@@ -1,0 +1,46 @@
+/*Styling the images used in blog page*/
+.image
+{
+	width: 900px;
+	height: 450px;
+	padding-left: 300px;
+
+}
+/*Another class for images in blog page to style the display to none*/
+.hide
+{
+	display: none;
+}
+/*Styling button that toogle the images*/
+.button
+{
+	font-size: 15px;
+	color: #fff;
+    width:160px;
+    height: 35px;
+    padding: 3px;
+    margin: 2px 650px;
+	background-color: #93adc8;
+	border:1px #ccffff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/*Styling the hover effect on the button*/
+.button:hover
+{
+	background-color: #99ccff;
+}
+/*Styling the div part of the blog page*/
+div
+{
+	font-size: 20px;
+	text-align: justify;
+	margin: 15px 300px;
+	font-weight: normal;
+	padding-bottom: 50px;
+}
+/*Styling the list in the div part of the blog page*/
+div ol li
+{
+	margin: 0px 80px;
+}
